@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>add_activity_form</class>
+ <widget class="QDialog" name="add_activity_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: qlineargradient(
+    x1: 0, y1: 0, x2: 1, y2: 1, 
+    stop: 0 #A8D8FF, stop: 1 #F0E1FF
+);
+font-family: &quot;Noto Sans&quot;;</string>
+  </property>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>90</y>
+     <width>241</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+     <pointsize>46</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>run</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>walk</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>gym</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>jump</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>swim</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000</string>
+   </property>
+   <property name="text">
+    <string>Выберите активность</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_activity_button">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>230</y>
+     <width>261</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000</string>
+   </property>
+   <property name="text">
+    <string>Стартовать активность</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

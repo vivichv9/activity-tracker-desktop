@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dashboard</class>
+ <widget class="QWidget" name="dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>805</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: qlineargradient(
+    x1: 0, y1: 0, x2: 1, y2: 1, 
+    stop: 0 #A8D8FF, stop: 1 #F0E1FF
+);
+font-family: &quot;Noto Sans&quot;;</string>
+  </property>
+  <widget class="QLabel" name="dashboard_title">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>321</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+     <pointsize>24</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #4A90E2;           /* Цвет текста — красивый синий */
+/* Градиент от белого к светло-голубому */
+    padding: 10px;            /* Отступы для текста */
+    border-radius: 5px;       /* Скругленные углы */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);  /* Тень для заголовка */
+}
+
+QLabel:hover {
+    color: #1A73E8;  /* Изменение цвета текста при наведении */
+}
+
+QLabel:focus {
+    border: 2px solid #4A90E2;  /* Подсветка синей рамкой при фокусе */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Личный кабинет</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="points_label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>60</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string>Баллы</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="username_label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>20</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string>Имя пользователя</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>160</y>
+     <width>258</width>
+     <height>217</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="friends_label">
+      <property name="styleSheet">
+       <string notr="true">color: #000000;</string>
+      </property>
+      <property name="text">
+       <string>                   Друзья</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="friends_list">
+      <property name="styleSheet">
+       <string notr="true">color: #000000;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>516</width>
+     <height>217</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="last_activity_label">
+       <property name="styleSheet">
+        <string notr="true">color: #000000;</string>
+       </property>
+       <property name="text">
+        <string>Последняя активность</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="list_last_activity">
+       <property name="styleSheet">
+        <string notr="true">color: #000000</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="achievements_label">
+       <property name="styleSheet">
+        <string notr="true">color: #000000;</string>
+       </property>
+       <property name="text">
+        <string>Последние достижения</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="achievements_list">
+       <property name="styleSheet">
+        <string notr="true">color: #000000;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QSplitter" name="splitter_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>641</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+   <widget class="QPushButton" name="add_activity">
+    <property name="styleSheet">
+     <string notr="true">color: #000000</string>
+    </property>
+    <property name="text">
+     <string>Добавить тренировку</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="list_activity">
+    <property name="styleSheet">
+     <string notr="true">color: #000000</string>
+    </property>
+    <property name="text">
+     <string>Список тренировок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_friend">
+    <property name="styleSheet">
+     <string notr="true">color: #000000</string>
+    </property>
+    <property name="text">
+     <string>Добавить друга</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="friend_list_button">
+    <property name="styleSheet">
+     <string notr="true">color: #000000</string>
+    </property>
+    <property name="text">
+     <string>Список друзей</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="achievements_button">
+    <property name="styleSheet">
+     <string notr="true">color: #000000</string>
+    </property>
+    <property name="text">
+     <string>Достижения</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="end_activity">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>158</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000</string>
+   </property>
+   <property name="text">
+    <string>Закончить тренировку</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="current_train_label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>100</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string>Текущая тренировка</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delete_friend_button">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>420</y>
+     <width>117</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000</string>
+   </property>
+   <property name="text">
+    <string>Удалить друга</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="username">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>20</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string>username</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="points">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>60</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string>points</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="active_train">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>100</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string>active_train</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

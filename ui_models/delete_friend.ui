@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>492</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: qlineargradient(
+    x1: 0, y1: 0, x2: 1, y2: 1, 
+    stop: 0 #A8D8FF, stop: 1 #F0E1FF
+);
+font-family: &quot;Noto Sans&quot;;</string>
+  </property>
+  <widget class="QPushButton" name="add_friend">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>290</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000</string>
+   </property>
+   <property name="text">
+    <string>Удалить друга</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>190</y>
+     <width>262</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="username_label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>121</width>
+     <height>69</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string>Имя друга</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>331</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+     <pointsize>23</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #4A90E2;           /* Цвет текста — красивый синий */
+/* Градиент от белого к светло-голубому */
+    padding: 10px;            /* Отступы для текста */
+    border-radius: 5px;       /* Скругленные углы */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);  /* Тень для заголовка */
+}
+
+QLabel:hover {
+    color: #1A73E8;  /* Изменение цвета текста при наведении */
+}
+
+QLabel:focus {
+    border: 2px solid #4A90E2;  /* Подсветка синей рамкой при фокусе */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Удаление друга</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

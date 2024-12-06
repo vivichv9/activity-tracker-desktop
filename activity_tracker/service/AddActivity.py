@@ -36,6 +36,7 @@ class AddActivity(QWidget):
             QtWidgets.QMessageBox.information(self, "Success!", f"Activity has been added. Start time: {res.json()['start_time']}")
             self.close()
             self.is_added.emit()
+            self.destroy()
 
         else:
             QtWidgets.QMessageBox.critical(self, "Error!", res.text)

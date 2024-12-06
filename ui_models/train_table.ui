@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>883</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: qlineargradient(
+    x1: 0, y1: 0, x2: 1, y2: 1, 
+    stop: 0 #A8D8FF, stop: 1 #F0E1FF
+);
+font-family: &quot;Noto Sans&quot;;</string>
+  </property>
+  <widget class="QTableWidget" name="train_table">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>881</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    font-family: &quot;Noto Sans&quot;, sans-serif;  /* Шрифт Noto Sans */
+    color: black;                          /* Черный цвет текста */
+    border: none;                          /* Убираем границу таблицы */
+
+
+
+    text-align: center;                    /* Выравнивание текста по центру */
+
+
+QHeaderView::section {
+    text-align: center;                    /* Выравнивание заголовков по центру */
+}
+
+QTableWidget::horizontalHeader {
+    section: header;
+    font-weight: bold;                     /* Заголовки выделены жирным */
+    height: 30px;                          /* Высота заголовка */
+}
+
+QTableWidget::verticalHeader {
+    font-weight: normal;                   /* Без жирного шрифта для вертикальных заголовков */
+}
+
+QTableWidget::item:selected {
+    background-color: #d3d3d3;             /* Цвет фона для выделенных ячеек */
+}
+
+QTableWidget::item:hover {
+    background-color: #f5f5f5;             /* Цвет фона при наведении */
+}
+
+QHeaderView {
+    resizeMode: Interactive;               /* Сделать заголовки колонок изменяемыми по ширине */
+}
+
+column {
+    width: 150px;                          /* Ширина колонок одинаковая */
+}
+</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Тип тренировки</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Дата начала</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Дата конца</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Сожжено калорий</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Зарабоотано бонусов</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000;</string>
+   </property>
+   <property name="text">
+    <string>Тренировки</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

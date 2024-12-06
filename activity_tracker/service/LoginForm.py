@@ -3,12 +3,12 @@ import json
 import requests
 from PySide6 import QtWidgets
 from PySide6.QtCore import Signal
-from PySide6.QtWidgets import QWidget
+from PySide6.QtWidgets import QMainWindow
 from activity_tracker.service import ActivityTracker
 from activity_tracker.windows.login_window import Ui_login_window
 
 
-class LoginForm(QWidget):
+class LoginForm(QMainWindow):
     login_success = Signal()
 
     def __init__(self, tracker):

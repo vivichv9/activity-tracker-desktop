@@ -15,8 +15,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QLabel, QListWidget, QListWidgetItem,
-    QPushButton, QSizePolicy, QSplitter, QVBoxLayout,
+from PySide6.QtWidgets import (QApplication, QHBoxLayout, QLabel, QListWidget,
+    QListWidgetItem, QPushButton, QSizePolicy, QSplitter,
     QWidget)
 
 class Ui_dashboard(object):
@@ -63,64 +63,6 @@ class Ui_dashboard(object):
         self.username_label.setObjectName(u"username_label")
         self.username_label.setGeometry(QRect(340, 20, 131, 21))
         self.username_label.setStyleSheet(u"color: #000000;")
-        self.layoutWidget = QWidget(dashboard)
-        self.layoutWidget.setObjectName(u"layoutWidget")
-        self.layoutWidget.setGeometry(QRect(510, 160, 258, 217))
-        self.verticalLayout_3 = QVBoxLayout(self.layoutWidget)
-        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.friends_label = QLabel(self.layoutWidget)
-        self.friends_label.setObjectName(u"friends_label")
-        self.friends_label.setStyleSheet(u"color: #000000;")
-
-        self.verticalLayout_3.addWidget(self.friends_label)
-
-        self.friends_list = QListWidget(self.layoutWidget)
-        self.friends_list.setObjectName(u"friends_list")
-        self.friends_list.setStyleSheet(u"color: #000000;")
-
-        self.verticalLayout_3.addWidget(self.friends_list)
-
-        self.splitter = QSplitter(dashboard)
-        self.splitter.setObjectName(u"splitter")
-        self.splitter.setGeometry(QRect(10, 160, 516, 217))
-        self.splitter.setOrientation(Qt.Orientation.Horizontal)
-        self.layoutWidget1 = QWidget(self.splitter)
-        self.layoutWidget1.setObjectName(u"layoutWidget1")
-        self.verticalLayout = QVBoxLayout(self.layoutWidget1)
-        self.verticalLayout.setObjectName(u"verticalLayout")
-        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.last_activity_label = QLabel(self.layoutWidget1)
-        self.last_activity_label.setObjectName(u"last_activity_label")
-        self.last_activity_label.setStyleSheet(u"color: #000000;")
-
-        self.verticalLayout.addWidget(self.last_activity_label)
-
-        self.list_last_activity = QListWidget(self.layoutWidget1)
-        self.list_last_activity.setObjectName(u"list_last_activity")
-        self.list_last_activity.setStyleSheet(u"color: #000000")
-
-        self.verticalLayout.addWidget(self.list_last_activity)
-
-        self.splitter.addWidget(self.layoutWidget1)
-        self.layoutWidget2 = QWidget(self.splitter)
-        self.layoutWidget2.setObjectName(u"layoutWidget2")
-        self.verticalLayout_2 = QVBoxLayout(self.layoutWidget2)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.achievements_label = QLabel(self.layoutWidget2)
-        self.achievements_label.setObjectName(u"achievements_label")
-        self.achievements_label.setStyleSheet(u"color: #000000;")
-
-        self.verticalLayout_2.addWidget(self.achievements_label)
-
-        self.achievements_list = QListWidget(self.layoutWidget2)
-        self.achievements_list.setObjectName(u"achievements_list")
-        self.achievements_list.setStyleSheet(u"color: #000000;")
-
-        self.verticalLayout_2.addWidget(self.achievements_list)
-
-        self.splitter.addWidget(self.layoutWidget2)
         self.splitter_2 = QSplitter(dashboard)
         self.splitter_2.setObjectName(u"splitter_2")
         self.splitter_2.setGeometry(QRect(10, 450, 641, 25))
@@ -169,6 +111,54 @@ class Ui_dashboard(object):
         self.active_train.setObjectName(u"active_train")
         self.active_train.setGeometry(QRect(490, 100, 131, 21))
         self.active_train.setStyleSheet(u"color: #000000;")
+        self.widget = QWidget(dashboard)
+        self.widget.setObjectName(u"widget")
+        self.widget.setGeometry(QRect(11, 184, 782, 194))
+        self.horizontalLayout = QHBoxLayout(self.widget)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.list_last_activity = QListWidget(self.widget)
+        self.list_last_activity.setObjectName(u"list_last_activity")
+        self.list_last_activity.setStyleSheet(u"color: #000000")
+
+        self.horizontalLayout.addWidget(self.list_last_activity)
+
+        self.achievements_list = QListWidget(self.widget)
+        self.achievements_list.setObjectName(u"achievements_list")
+        self.achievements_list.setStyleSheet(u"color: #000000;")
+
+        self.horizontalLayout.addWidget(self.achievements_list)
+
+        self.friends_list = QListWidget(self.widget)
+        self.friends_list.setObjectName(u"friends_list")
+        self.friends_list.setStyleSheet(u"color: #000000;")
+
+        self.horizontalLayout.addWidget(self.friends_list)
+
+        self.widget1 = QWidget(dashboard)
+        self.widget1.setObjectName(u"widget1")
+        self.widget1.setGeometry(QRect(11, 161, 781, 19))
+        self.horizontalLayout_2 = QHBoxLayout(self.widget1)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.last_activity_label = QLabel(self.widget1)
+        self.last_activity_label.setObjectName(u"last_activity_label")
+        self.last_activity_label.setStyleSheet(u"color: #000000;")
+
+        self.horizontalLayout_2.addWidget(self.last_activity_label)
+
+        self.achievements_label = QLabel(self.widget1)
+        self.achievements_label.setObjectName(u"achievements_label")
+        self.achievements_label.setStyleSheet(u"color: #000000;")
+
+        self.horizontalLayout_2.addWidget(self.achievements_label)
+
+        self.friends_label = QLabel(self.widget1)
+        self.friends_label.setObjectName(u"friends_label")
+        self.friends_label.setStyleSheet(u"color: #000000;")
+
+        self.horizontalLayout_2.addWidget(self.friends_label)
+
 
         self.retranslateUi(dashboard)
 
@@ -180,9 +170,6 @@ class Ui_dashboard(object):
         self.dashboard_title.setText(QCoreApplication.translate("dashboard", u"\u041b\u0438\u0447\u043d\u044b\u0439 \u043a\u0430\u0431\u0438\u043d\u0435\u0442", None))
         self.points_label.setText(QCoreApplication.translate("dashboard", u"\u0411\u0430\u043b\u043b\u044b", None))
         self.username_label.setText(QCoreApplication.translate("dashboard", u"\u0418\u043c\u044f \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f", None))
-        self.friends_label.setText(QCoreApplication.translate("dashboard", u"                   \u0414\u0440\u0443\u0437\u044c\u044f", None))
-        self.last_activity_label.setText(QCoreApplication.translate("dashboard", u"\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0430\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u044c", None))
-        self.achievements_label.setText(QCoreApplication.translate("dashboard", u"\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0435 \u0434\u043e\u0441\u0442\u0438\u0436\u0435\u043d\u0438\u044f", None))
         self.add_activity.setText(QCoreApplication.translate("dashboard", u"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0442\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043a\u0443", None))
         self.list_activity.setText(QCoreApplication.translate("dashboard", u"\u0421\u043f\u0438\u0441\u043e\u043a \u0442\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043e\u043a", None))
         self.add_friend.setText(QCoreApplication.translate("dashboard", u"\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0434\u0440\u0443\u0433\u0430", None))
@@ -194,5 +181,8 @@ class Ui_dashboard(object):
         self.username.setText(QCoreApplication.translate("dashboard", u"username", None))
         self.points.setText(QCoreApplication.translate("dashboard", u"points", None))
         self.active_train.setText(QCoreApplication.translate("dashboard", u"active_train", None))
+        self.last_activity_label.setText(QCoreApplication.translate("dashboard", u"\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0430\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u044c", None))
+        self.achievements_label.setText(QCoreApplication.translate("dashboard", u"\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0435 \u0434\u043e\u0441\u0442\u0438\u0436\u0435\u043d\u0438\u044f", None))
+        self.friends_label.setText(QCoreApplication.translate("dashboard", u"                   \u0414\u0440\u0443\u0437\u044c\u044f", None))
     # retranslateUi
 

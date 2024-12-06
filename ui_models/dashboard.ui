@@ -91,90 +91,6 @@ QLabel:focus {
     <string>Имя пользователя</string>
    </property>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>510</x>
-     <y>160</y>
-     <width>258</width>
-     <height>217</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_3">
-    <item>
-     <widget class="QLabel" name="friends_label">
-      <property name="styleSheet">
-       <string notr="true">color: #000000;</string>
-      </property>
-      <property name="text">
-       <string>                   Друзья</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QListWidget" name="friends_list">
-      <property name="styleSheet">
-       <string notr="true">color: #000000;</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QSplitter" name="splitter">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>160</y>
-     <width>516</width>
-     <height>217</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Orientation::Horizontal</enum>
-   </property>
-   <widget class="QWidget" name="layoutWidget">
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QLabel" name="last_activity_label">
-       <property name="styleSheet">
-        <string notr="true">color: #000000;</string>
-       </property>
-       <property name="text">
-        <string>Последняя активность</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QListWidget" name="list_last_activity">
-       <property name="styleSheet">
-        <string notr="true">color: #000000</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QLabel" name="achievements_label">
-       <property name="styleSheet">
-        <string notr="true">color: #000000;</string>
-       </property>
-       <property name="text">
-        <string>Последние достижения</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QListWidget" name="achievements_list">
-       <property name="styleSheet">
-        <string notr="true">color: #000000;</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-  </widget>
   <widget class="QSplitter" name="splitter_2">
    <property name="geometry">
     <rect>
@@ -323,6 +239,81 @@ QLabel:focus {
    <property name="text">
     <string>active_train</string>
    </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>184</y>
+     <width>782</width>
+     <height>194</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QListWidget" name="list_last_activity">
+      <property name="styleSheet">
+       <string notr="true">color: #000000</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="achievements_list">
+      <property name="styleSheet">
+       <string notr="true">color: #000000;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="friends_list">
+      <property name="styleSheet">
+       <string notr="true">color: #000000;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>161</y>
+     <width>781</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="last_activity_label">
+      <property name="styleSheet">
+       <string notr="true">color: #000000;</string>
+      </property>
+      <property name="text">
+       <string>Последняя активность</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="achievements_label">
+      <property name="styleSheet">
+       <string notr="true">color: #000000;</string>
+      </property>
+      <property name="text">
+       <string>Последние достижения</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="friends_label">
+      <property name="styleSheet">
+       <string notr="true">color: #000000;</string>
+      </property>
+      <property name="text">
+       <string>                   Друзья</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

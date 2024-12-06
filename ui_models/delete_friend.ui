@@ -42,16 +42,6 @@ font-family: &quot;Noto Sans&quot;;</string>
     <string>Удалить друга</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>190</y>
-     <width>262</width>
-     <height>23</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLabel" name="username_label">
    <property name="geometry">
     <rect>
@@ -110,6 +100,19 @@ QLabel:focus {
    </property>
    <property name="text">
     <string>Удаление друга</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>170</y>
+     <width>262</width>
+     <height>69</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #000000</string>
    </property>
   </widget>
  </widget>
